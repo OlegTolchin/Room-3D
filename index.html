@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Interior</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- IMPORT MAP (ОБЯЗАТЕЛЬНО) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+      "three/examples/jsm/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <canvas id="scene"></canvas>
+
+  <div class="ui">
+    <h1>Современный интерьер</h1>
+    <p>Интерактивная 3D-сцена</p>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
