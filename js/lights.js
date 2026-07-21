@@ -8,14 +8,14 @@ RectAreaLightUniformsLib.init();
  * Базовый свет сцены (Ambient + Directional)
  */
 export function setupLights(scene) {
-  const ambient = new THREE.AmbientLight(0xffffff, 0.8);
+  const ambient = new THREE.AmbientLight(0xffffff, 0.3);
   scene.add(ambient);
 
   const key = new THREE.DirectionalLight(0xffffff, 0.2);
   key.position.set(0, 0, 0);
   scene.add(key);
 
-  const fill = new THREE.DirectionalLight(0xffffff, 0.2);
+  const fill = new THREE.DirectionalLight(0xffffff, 0.5);
   fill.position.set(0, 0, 0);
   scene.add(fill);
 }
@@ -43,7 +43,7 @@ export function setupRoomLights(room) {
       80,             // distance
       Math.PI / 4,    // angle
       0.5,            // penumbra
-      1.5               // decay (физически корректный)
+      1.5             // decay (физически корректный)
     );
 
     spotObject.add(spotLight);
